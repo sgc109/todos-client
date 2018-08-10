@@ -1,17 +1,12 @@
 <template>
   <div id="app">
-    <button class="btn btn-primary">Button</button>
-    <br />
-    <img src="./assets/logo.png">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
     <router-view/>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'app'
-}
-</script>
 
 <style>
 #app {
